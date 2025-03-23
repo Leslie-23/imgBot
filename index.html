@@ -3,22 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daily Quote Bot - Get your daily dose of humor"
+    />
     <title>Daily Quote Bot</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
   </head>
   <body>
-    <div id="quote-container" class="quote-container">
-      <h2 id="quote-text" class="quote-text"></h2>
-      <button class="nextButton" id="nextButton">Next Quote</button>
-    </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Daily Quote Bot</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section">
+        <div class="container">
+          <div class="quote-container">
+            <div id="loading-indicator" class="loading-indicator">
+              <div class="spinner"></div>
+            </div>
+            <h2 id="quote-text" class="quote-text"></h2>
+            <div class="quote-actions">
+              <button class="btn primary-btn" id="nextButton">
+                Next Quote
+              </button>
+              <button class="btn secondary-btn" id="shareButton">
+                Share Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Daily Quote Bot</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Daily Quote Bot is a simple yet powerful application designed to
+                brighten your day with humorous quotes and jokes. Our mission is
+                to bring a smile to your face whenever you need it.
+              </p>
+              <p>
+                The application fetches content from a curated collection of
+                jokes and presents them in a clean, easy-to-read format. Whether
+                you're taking a break from work or just need a quick laugh,
+                Daily Quote Bot has got you covered.
+              </p>
+              <p>Features include:</p>
+              <ul>
+                <li>Instant access to funny quotes</li>
+                <li>Simple, intuitive interface</li>
+                <li>Share functionality to spread the joy</li>
+                <li>Regular updates to our quote database</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact the Developer</h2>
+          <div class="contact-content">
+            <div class="developer-info">
+              <h3>About the Developer</h3>
+              <p>
+                Daily Quote Bot was created by Leslie Ajayi, a passionate
+                developer dedicated to creating useful and enjoyable web
+                applications.
+              </p>
+              <p>
+                Leslie specializes in front-end development with a focus on
+                creating intuitive user experiences and clean, efficient code.
+              </p>
+              <div class="contact-details">
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:leslieajayi27@gmail.com"
+                    >leslieajayi27@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>PAL Technologies &copy; 2024</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
-  <footer>
-    contact Developer via email:
-    <div class="email">
-      <a href="mailto:leslieajayi27@gmail.com">leslieajayi27@gmail.com</a>
-    </div>
-    <div class="pal">PAL Tehnologies &copy; 2024</div>
-  </footer>
 </html>
